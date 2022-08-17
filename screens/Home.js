@@ -1,16 +1,15 @@
-import { View, Text ,SafeAreaView, FlatList} from 'react-native'
-import React from 'react'
+import {View, SafeAreaView} from "react-native";
+
+import NewNovie from "../components/NewNovie";
 
 const Home = () => {
   return (
     <SafeAreaView style={{flex: 1}}>
-       <View style={{flex: 1}}>
-        <Text>
-            Home
-        </Text>
-       </View>
+      <View style={{flex: 1}}>
+        <NewNovie />
+      </View>
     </SafeAreaView>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
